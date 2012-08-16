@@ -1,0 +1,72 @@
+{
+    "name": "architect",
+    "settings": {
+        "urlPrefix": "http://localhost:19090/architect/",
+        "spacesToIndent": 4,
+        "exportPath": "",
+        "lineEnding": "LF",
+        "genTimestamps": false,
+        "cacheBust": false
+    },
+    "xdsVersion": "2.1.0",
+    "xdsBuild": 584,
+    "schemaVersion": 1,
+    "upgradeVersion": 210000000495,
+    "framework": "touch20",
+    "topInstanceFileMap": {
+        "882bebe4-d674-4dee-ad7f-a772fd8e4544": {
+            "paths": [
+                "metadata/resource/Library"
+            ],
+            "className": "Library"
+        },
+        "cf470f1f-a704-4e12-b246-09a3ca90dbd9": {
+            "paths": [
+                "metadata/controller/Main",
+                "app/controller/override/Main.js",
+                "app/controller/Main.js"
+            ],
+            "className": "Main"
+        },
+        "9dcc80de-c910-46d1-8ca5-a2b466ad092d": {
+            "paths": [
+                "metadata/view/Draw",
+                "app/view/override/Draw.js",
+                "app/view/Draw.js"
+            ],
+            "className": "Draw"
+        },
+        "9dacd907-582d-4392-b65d-9bda30f1b8c5": {
+            "paths": [
+                "metadata/resource/css"
+            ],
+            "className": "css"
+        },
+        "73cb768a-a17f-416f-af30-f7fab88c3f0b": {
+            "paths": [
+                "metadata/controller/Canvas",
+                "app/controller/override/Canvas.js",
+                "app/controller/Canvas.js"
+            ],
+            "className": "Canvas"
+        }
+    },
+    "viewOrderMap": {
+        "view": [
+            "9dcc80de-c910-46d1-8ca5-a2b466ad092d"
+        ],
+        "store": [],
+        "controller": [
+            "cf470f1f-a704-4e12-b246-09a3ca90dbd9",
+            "73cb768a-a17f-416f-af30-f7fab88c3f0b"
+        ],
+        "model": [],
+        "resource": [
+            "882bebe4-d674-4dee-ad7f-a772fd8e4544",
+            "9dacd907-582d-4392-b65d-9bda30f1b8c5"
+        ],
+        "app": [
+            "application"
+        ]
+    }
+}

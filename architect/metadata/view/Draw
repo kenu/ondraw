@@ -1,0 +1,426 @@
+{
+    "type": "container",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userClassName": "Draw",
+        "designer|initialView": true,
+        "id": "Main",
+        "layout": "card"
+    },
+    "id": "ExtBox1-ext-gen5941",
+    "designerId": "9dcc80de-c910-46d1-8ca5-a2b466ad092d",
+    "cn": [
+        {
+            "type": "panel",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "container|align": "center",
+                "container|pack": "center",
+                "designer|userClassName": "Main",
+                "id": "MainView",
+                "layout": "vbox",
+                "scrollable": false
+            },
+            "designerId": "fbb1a8c3-3496-4a52-89e7-ef111ccc2a49",
+            "cn": [
+                {
+                    "type": "panel",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "layout|flex": 2,
+                        "designer|userClassName": "MyPanel1",
+                        "id": "TopView",
+                        "style": "background-color: gray",
+                        "width": "90%",
+                        "layout": "card"
+                    },
+                    "designerId": "7396bb92-0334-4fe5-9a61-a59045e27042"
+                },
+                {
+                    "type": "panel",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "layout|flex": 1,
+                        "container|align": "center",
+                        "container|pack": "center",
+                        "designer|userClassName": "MyPanel2",
+                        "id": "BottomView",
+                        "width": "90%",
+                        "layout": "hbox"
+                    },
+                    "designerId": "3eea6c61-0da1-49b7-8b67-efdf6f73f45b",
+                    "cn": [
+                        {
+                            "type": "button",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "action": "Room",
+                                "layout|flex": 1,
+                                "designer|userClassName": "MyButton",
+                                "height": "70%",
+                                "id": "MakeRoom",
+                                "margin": "10px",
+                                "ui": "decline-round",
+                                "text": "방만들기"
+                            },
+                            "designerId": "4835ea78-5721-4553-ab50-d62ccb446f78",
+                            "customConfigs": [
+                                {
+                                    "group": "(Custom Properties)",
+                                    "name": "action",
+                                    "type": "string"
+                                }
+                            ]
+                        },
+                        {
+                            "type": "spacer",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "layout|flex": 0,
+                                "designer|userClassName": "MySpacer",
+                                "width": 10
+                            },
+                            "designerId": "13e53272-14eb-4c83-aa75-e564246a1d54"
+                        },
+                        {
+                            "type": "button",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "action": "connection",
+                                "layout|flex": 1,
+                                "designer|userClassName": "MyButton1",
+                                "height": "70%",
+                                "id": "Connect",
+                                "margin": "10px",
+                                "ui": "action-round",
+                                "text": "참여하기"
+                            },
+                            "designerId": "077d0248-e8b0-4aa6-86b4-5c18bfc35315",
+                            "customConfigs": [
+                                {
+                                    "group": "(Custom Properties)",
+                                    "name": "action",
+                                    "type": "string"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "panel",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "CanvasView",
+                "id": "CanvasView",
+                "layout": "card"
+            },
+            "designerId": "ce249266-bcca-46ef-a6d5-f73c9fcc7e6c",
+            "cn": [
+                {
+                    "type": "toolbar",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "container|align": "center",
+                        "container|pack": "center",
+                        "designer|userClassName": "MyToolbar",
+                        "docked": "top",
+                        "height": 40,
+                        "id": "TopToolbar",
+                        "style": null,
+                        "ui": "neutral",
+                        "title": ""
+                    },
+                    "designerId": "a40c12c7-43f2-4661-863d-87b5bd5b00f4",
+                    "cn": [
+                        {
+                            "type": "button",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "designer|userClassName": "MyButton2",
+                                "height": "40px",
+                                "id": "ToolPen",
+                                "ui": "plain",
+                                "width": "40px",
+                                "icon": "",
+                                "iconAlign": "center",
+                                "iconMask": true,
+                                "text": null
+                            },
+                            "designerId": "972041d9-b9ee-46ce-9a84-7a5c22ffaff9"
+                        },
+                        {
+                            "type": "button",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "designer|userClassName": "MyButton2",
+                                "height": "40px",
+                                "id": "ToolEraser",
+                                "ui": "plain",
+                                "width": "40px",
+                                "iconAlign": "center",
+                                "iconMask": true,
+                                "text": null
+                            },
+                            "designerId": "2ee4ac90-87e3-4a8a-a003-05d80379b3f7"
+                        },
+                        {
+                            "type": "button",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "designer|userClassName": "MyButton6",
+                                "id": "RoomNum",
+                                "padding": "",
+                                "ui": "plain",
+                                "iconAlign": "center",
+                                "iconMask": true,
+                                "text": "102525"
+                            },
+                            "designerId": "200691d4-084d-49d0-8e8f-c02089ff3b35"
+                        },
+                        {
+                            "type": "button",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "designer|userClassName": "MyButton2",
+                                "height": "40px",
+                                "id": "ToolNew",
+                                "ui": "plain",
+                                "width": "40px",
+                                "iconAlign": "center",
+                                "iconMask": true,
+                                "text": null
+                            },
+                            "designerId": "4ed9608d-1cb3-43a4-ab2c-573ba66f77f8"
+                        },
+                        {
+                            "type": "button",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "designer|userClassName": "MyButton2",
+                                "height": "40px",
+                                "id": "ToolSetting",
+                                "ui": "plain",
+                                "width": "40px",
+                                "iconAlign": "center",
+                                "iconMask": true,
+                                "text": null
+                            },
+                            "designerId": "d5ce7de0-54de-4fac-b0b0-23f100136f6f"
+                        }
+                    ]
+                },
+                {
+                    "type": "toolbar",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "container|align": "center",
+                        "container|pack": "center",
+                        "designer|userClassName": "MyToolbar1",
+                        "docked": "bottom",
+                        "height": 40,
+                        "id": "BottomToolbar",
+                        "ui": "neutral"
+                    },
+                    "designerId": "475b2351-17a4-4597-915e-4f9a27d25b5b",
+                    "cn": [
+                        {
+                            "type": "button",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "designer|userClassName": "MyButton2",
+                                "height": 40,
+                                "id": "ColorRed",
+                                "ui": "plain",
+                                "width": "40px",
+                                "icon": "",
+                                "iconAlign": "center",
+                                "iconMask": true,
+                                "text": null
+                            },
+                            "designerId": "542a0fa5-9fdd-4656-a20c-5210e725ed13"
+                        },
+                        {
+                            "type": "button",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "designer|userClassName": "MyButton2",
+                                "height": "40px",
+                                "id": "ColorBlue",
+                                "ui": "plain",
+                                "width": "40px",
+                                "iconAlign": "center",
+                                "iconMask": true,
+                                "text": null
+                            },
+                            "designerId": "ecd680ad-ead8-422f-8f82-9ca3e5dd2b89"
+                        },
+                        {
+                            "type": "button",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "designer|userClassName": "MyButton2",
+                                "height": "40px",
+                                "id": "ColorYellow",
+                                "ui": "plain",
+                                "width": "40px",
+                                "iconAlign": "center",
+                                "iconMask": true,
+                                "text": null
+                            },
+                            "designerId": "67e2565b-5bfa-48f2-b010-faacc10472b9"
+                        },
+                        {
+                            "type": "button",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "designer|userClassName": "MyButton2",
+                                "id": "ColorGreen",
+                                "minHeight": "40px",
+                                "ui": "plain",
+                                "width": "40px",
+                                "iconAlign": "center",
+                                "iconMask": true,
+                                "text": null
+                            },
+                            "designerId": "69bd8c5d-76cc-49c8-b59f-ece904b897c1"
+                        },
+                        {
+                            "type": "button",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "designer|userClassName": "MyButton2",
+                                "height": "40px",
+                                "id": "ColorBlack",
+                                "ui": "plain",
+                                "width": "40px",
+                                "iconAlign": "center",
+                                "iconMask": true,
+                                "text": null
+                            },
+                            "designerId": "b61ba91f-0996-4c47-8044-76ec06083b15"
+                        },
+                        {
+                            "type": "button",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "designer|userClassName": "MyButton2",
+                                "height": "40px",
+                                "id": "ColorGray",
+                                "ui": "plain",
+                                "width": "40px",
+                                "iconAlign": "center",
+                                "iconMask": true,
+                                "text": null
+                            },
+                            "designerId": "e390d56e-cc7c-4f67-80f3-5dd595c4bb1e"
+                        }
+                    ]
+                },
+                {
+                    "type": "panel",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "designer|userClassName": "MyPanel4",
+                        "contentEl": null,
+                        "html": "<canvas id=\"mycanvas\" width=\"640\" height=\"860\" style=\"witdh:100%; height:100%;\">no canvas support</canvas>",
+                        "id": "CanvasPanel",
+                        "style": null,
+                        "styleHtmlContent": null,
+                        "layout": "card"
+                    },
+                    "designerId": "54651af3-bf52-478d-8d33-661c52251031"
+                }
+            ]
+        }
+    ]
+}
