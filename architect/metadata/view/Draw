@@ -412,7 +412,7 @@
                     "userConfig": {
                         "designer|userClassName": "MyPanel4",
                         "contentEl": null,
-                        "html": "<canvas id=\"mycanvas\" width=\"640\" height=\"860\" style=\"witdh:100%; height:100%;\">no canvas support</canvas>",
+                        "html": "<canvas id=\"mycanvas\" width=\"640\" height=\"860\" style=\"width: 100%; height: 100%;\"></canvas>",
                         "id": "CanvasPanel",
                         "style": null,
                         "styleHtmlContent": null,

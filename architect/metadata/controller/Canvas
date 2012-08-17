@@ -225,7 +225,7 @@
                     "console.log(context);",
                     "",
                     "context.fillStyle = \"#232D38\";",
-                    "context.fillRect(0, 0, 260, 260);"
+                    "context.fillRect(0, 0, 640, 860);"
                 ],
                 "name": "tap",
                 "designer|targetType": "Ext.Button",

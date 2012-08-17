@@ -221,10 +221,48 @@ Ext.define('MyApp.view.Draw', {
                     },
                     {
                         xtype: 'panel',
-                        html: '<canvas id="mycanvas" width="640" height="860" style="witdh:100%; height:100%;">no canvas support</canvas>',
+                        html: '<canvas id="mycanvas" width="640" height="860" style=""></canvas>',
                         id: 'CanvasPanel',
+                        scope: 'this',
                         layout: {
                             type: 'card'
+                        },
+                        listeners: {
+                        	show: function() {
+                        	},
+                        	painted: function() {
+
+                            	var canvas = document.getElementById('mycanvas'); 
+                            	var context = canvas.getContext("2d");
+                            	
+//                            	if (mode == 'pen') {
+                            		canvas.addEventListener("mousedown" ,function(event){
+                            			if (!isDraw) {
+                            				isDraw = true;
+                            				oldPoint = Ext.create('Point', {
+                            					x: event.offsetX,
+                            					y: event.offsetY
+                            				});
+                            			}
+                            		});
+                            		canvas.addEventListener("mousemove" ,function(event){
+                            			if (isDraw) {
+                            				newPoint = Ext.create('Point', {
+                            					x: event.offsetX,
+                            					y: event.offsetY
+                            				});
+                                            context.beginPath();
+                                            context.moveTo(oldPoint.getX(), oldPoint.getY());
+                                            context.lineTo(newPoint.getX(), newPoint.getY());
+                                            context.stroke();
+                                            oldPoint = newPoint;
+                                        }
+                            		});
+                            		canvas.addEventListener("mouseup" ,function(event){
+                            			isDraw = false;
+                            		});
+//                            	}
+                            }
                         }
                     }
                 ]

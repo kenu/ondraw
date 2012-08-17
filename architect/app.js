@@ -13,6 +13,30 @@
  * Do NOT hand edit this file.
  */
 
+
+// global variable
+ 
+var strokeStyle = 'black';			// line color
+var fillStyle = 'white';			// fill color
+var lineWidth = 1;					// line width
+var isDraw = false;					// draw status
+var mode = 'pen';					// pen mode
+var newPoint, oldPoint;
+
+// point class
+Ext.define('Point', {
+    config: {
+        x: null,
+        y: null,
+        width: null,
+        color: null,
+    },
+ 
+    constructor: function(config) {
+        this.initConfig(config);
+    }
+});
+
 Ext.Loader.setConfig({
     enabled: true
 });

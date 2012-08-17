@@ -42,14 +42,7 @@ Ext.define('MyApp.controller.Canvas', {
     },
 
     onButtonTap: function(button, e, options) {
-        var canvas = document.getElementById('mycanvas');
-        var context = canvas.getContext('2d');
-
-        console.log(canvas);
-        console.log(context);
-
-        context.fillStyle = "#232D38";
-        context.fillRect(0, 0, 260, 260);
+        
     }
 
 });
