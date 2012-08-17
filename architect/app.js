@@ -23,20 +23,32 @@ var isDraw = false;					// draw status
 var mode = 'pen';					// pen mode
 var newPoint, oldPoint;
 
-// point class
+// Point class
 Ext.define('Point', {
     config: {
         x: null,
         y: null,
         width: null,
         color: null,
+        standard_width: 640,
+        standard_height: 960,
+        current_width: null,
+        current_height: null,
     },
  
     constructor: function(config) {
         this.initConfig(config);
+    },
+    
+    cx : function() {
+    	return ((this._x * this._standard_width) / this._current_width);
+    },
+    cy : function() {
+    	return ((this._y * this._standard_height) / this._current_height);
     }
 });
 
+// Application
 Ext.Loader.setConfig({
     enabled: true
 });
@@ -52,7 +64,6 @@ Ext.application({
     ],
 
     launch: function() {
-
         Ext.create('MyApp.view.Draw', {fullscreen: true});
     }
 
