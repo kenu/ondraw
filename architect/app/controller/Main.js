@@ -33,16 +33,27 @@ Ext.define('MyApp.controller.Main', {
             }
         }
     },
-
+    
+    launch : function() {
+    	server.on('validateRoom', function(data) {
+    		if(!data.isRoom) {
+//    			this.getMain().animateActiveItem(1, {type: 'reveal', direction: 'up'});
+    			Ext.getCmp('RoomNum').setText(data.roomNum);
+    			Ext.getCmp('Main').animateActiveItem(1, {type: 'reveal', direction: 'up'});
+    		} else {
+    			roomNumber = Math.floor(Math.random()*999999);
+    			server.emit('join', { num : roomNumber, opts : 'created' });
+    		}
+    	});
+    },
+    
     onButtonTapMakeRoom: function(button, e, options) {
-        console.log('button makeroom tap');
-
-        this.getMain().animateActiveItem(1, {type: 'reveal', direction: 'up'});
+        var roomNumber = Math.floor(Math.random()*999999);
+        
+        server.emit('join', { num : roomNumber, opts : 'created' });
     },
 
     onButtonTapConnect: function(button, e, options) {
-        console.log('button connect tap');
-
         Ext.Msg.show({
             title   : '방번호를 입력하세요',
             msg     : null,
@@ -54,15 +65,11 @@ Ext.define('MyApp.controller.Main', {
                 itemId : 'cancle',
                 text   : '취소'
             }],
-            prompt  : { maxlength : 6, autocapitalize : false },
+            prompt  : { maxLength : 6, autocapitalize : false },
             fn      : function(text,val) {
                 // do some stuff
-                console.log(text);
-                console.log(val);
-
                 if(text == 'ok') {
-                    Ext.getCmp('RoomNum').setText(val);
-                    Ext.getCmp('Main').animateActiveItem(1, {type: 'reveal', direction: 'down'});
+                	server.emit('join', { num : val, opts : 'joined' });
                 } else {
 
                 }

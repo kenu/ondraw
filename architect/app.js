@@ -21,15 +21,16 @@ var fillStyle = 'white';			// fill color
 var lineWidth = 1;					// line width
 var isDraw = false;					// draw status
 var mode = 'pen';					// pen mode
-var newPoint, oldPoint;
+var newPoint, oldPoint;				// point set
+var canvas;							// canvas panel
+var context;						// canvas settings
+var server;							// nodejs socket.io
 
 // Point class
 Ext.define('Point', {
     config: {
         x: null,
         y: null,
-        width: null,
-        color: null,
         standard_width: 640,
         standard_height: 960,
         current_width: null,
@@ -64,6 +65,7 @@ Ext.application({
     ],
 
     launch: function() {
+    	server = io.connect();
         Ext.create('MyApp.view.Draw', {fullscreen: true});
     }
 

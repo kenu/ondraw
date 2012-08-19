@@ -36,7 +36,7 @@ Ext.define('MyApp.view.Draw', {
                         xtype: 'panel',
                         flex: 2,
                         id: 'TopView',
-                        style: 'background-color: gray',
+                        style: 'background-color: white',
                         width: '90%',
                         layout: {
                             type: 'card'
@@ -221,38 +221,51 @@ Ext.define('MyApp.view.Draw', {
                     },
                     {
                         xtype: 'panel',
-                        html: '<canvas id="mycanvas" width="640" height="960" style="width:100%; height:100%;"></canvas>',
+                        html: '<canvas id="mycanvas" width="640" height="960" style="width:100%; height:100%;" onmouseleave="javascript:alert("kkk");"></canvas>',
                         id: 'CanvasPanel',
                         scope: 'this',
+                        style: 'background-color: white',
                         layout: {
                             type: 'card'
                         },
                         listeners: {
+                        	initialize: function() {
+                        		server.on('line', function(data) {
+                        			context.beginPath();
+                        			
+//                        			context.lineWidth = lineWidth;
+//                        			context.strokeStyle = strokeStyle;
+//                        			context.moveTo(oldPoint.cx(), oldPoint.cy());
+//                        			context.lineTo(newPoint.cx(), newPoint.cy());
+                        			
+                        			context.lineWidth = data.width;
+                        			context.strokeStyle = data.color;
+                        			context.moveTo(data.x1, data.y1);
+                        			context.lineTo(data.x2, data.y2);
+                        				
+                        			context.stroke();
+                            	});
+                        	},
                         	// panel painting
                         	painted: function() {
-                            	var canvas = document.getElementById('mycanvas'); 
-                            	var context = canvas.getContext("2d");
-                            	
+                        		canvas = document.getElementById('mycanvas'); 
+                        		context = canvas.getContext("2d");
+                        		
                             	var start = function(event, out) {
+                            		event.preventDefault();
                             		if (!isDraw) {
                             			isDraw = true;
                             			if (out == 'mouse') {
 	                            			oldPoint = Ext.create('Point', {
 	                            				x: event.offsetX,
 	                            				y: event.offsetY,
-	                            				width: lineWidth,
-	                            				color: strokeStyle,
 	                            				current_width: window.document.body.clientWidth,
 	                            				current_height: window.document.body.clientHeight-80
 	                            			});
                             			} else if (out == 'touch') {
-                            				console.log(event.touches[0].pageX);
-                            				console.log(event.pageX);
                             				oldPoint = Ext.create('Point', {
 	                            				x: event.pageX,
 	                            				y: event.pageY-40,
-	                            				width: lineWidth,
-	                            				color: strokeStyle,
 	                            				current_width: window.document.body.clientWidth,
 	                            				current_height: window.document.body.clientHeight
 	                            			});
@@ -260,13 +273,12 @@ Ext.define('MyApp.view.Draw', {
                             		}
                             	};
                             	var move = function(event, out) {
+                            		event.preventDefault();
                             		if (isDraw) {
                             			if (out == 'mouse') {
 	                            			newPoint = Ext.create('Point', {
 	                            				x: event.offsetX,
 	                            				y: event.offsetY,
-	                            				width: lineWidth,
-	                            				color: strokeStyle,
 	                            				current_width: window.document.body.clientWidth,
 	                            				current_height: window.document.body.clientHeight-80
 	                            			});
@@ -274,16 +286,18 @@ Ext.define('MyApp.view.Draw', {
                             				newPoint = Ext.create('Point', {
 	                            				x: event.pageX,
 	                            				y: event.pageY-40,
-	                            				width: lineWidth,
-	                            				color: strokeStyle,
 	                            				current_width: window.document.body.clientWidth,
 	                            				current_height: window.document.body.clientHeight
 	                            			});
                             			}
-                            			context.beginPath();
-                            			context.moveTo(oldPoint.cx(), oldPoint.cy());
-                            			context.lineTo(newPoint.cx(), newPoint.cy());
-                            			context.stroke();
+                            			server.emit('draw', {
+                            				width: lineWidth,
+                            				color: strokeStyle,
+                            				x1: oldPoint.cx(),
+                            				y1: oldPoint.cy(),
+                            				x2: newPoint.cx(),
+                            				y2: newPoint.cy()
+                            			});
                             			oldPoint = newPoint;
                             		}
                             	};
@@ -310,6 +324,15 @@ Ext.define('MyApp.view.Draw', {
                             		isDraw = false;
                             	});
                             	
+                            	// extend event
+                            	canvas.addEventListener("MouseEnter" ,function(event){
+                            		console.log('enter');
+                            		isDraw = false;
+                            	});
+                            	canvas.addEventListener("MouseLeave" ,function(event){
+                            		console.log('leave');
+                            		isDraw = false;
+                            	});
                             	
                             } // end painted
                         } // end listeners
