@@ -1,0 +1,92 @@
+
+/* 메인  */
+#MakeRoom {background:#333;border-radius:0;border:1px solid #222;font-size:16px;padding:10px;}
+#MakeRoom:hover {background:#111;border-radius:0;border:1px solid #222;}
+
+#Connect {background:#333;border-radius:0;border:1px solid #222;font-size:16px;padding:10px;}
+
+#Connect:hover {background:#111;border-radius:0;border:1px solid #222;font-size:16px;padding:10px;}
+
+#TopView {background:#fff url('../image/img01.png') no-repeat; background-position:center;background-color:#fff;background-size: contain;}
+
+
+
+/* 팝업 레이어  */
+#ext-sheet-1 {border:1px solid #333;opacity:.95; box-shadow:#000 5px 5px 10px;padding:20px;background-size: 10px 10px !important;background: #333;}
+
+#ext-title-2 {width:120%;letter-spacing:-0.15em; background: url('../image/lock.png') no-repeat;background-size: 20px 20px !important;text-align:left;padding-left:20px;}
+
+
+
+#MainView {background: url('../image/bg.png'); background-position:center;}
+
+
+#ToolPen {
+	background: url('../image/pen.png') no-repeat; background-position:center;
+	background-size: 30px 30px !important;		
+}
+#ToolEraser {
+	background: url('../image/eraser.png') no-repeat; background-position:center;
+	background-size: 30px 30px !important;	
+}
+#ToolNew {
+	background: url('../image/newpage.png') no-repeat; background-position:center;
+	background-size: 22px 22px !important;	
+}
+#ToolSetting {
+	background: url('../image/settings.png') no-repeat; background-position:center;
+	background-size: 22px 22px !important;
+}
+#HomeButton {
+	background: url('../image/home.png') no-repeat; background-position:center;
+	background-size: 22px 22px !important;
+}
+#LoadPicture {
+	background: url('../image/load.png') no-repeat; background-position:center;
+	background-size: 22px 22px !important;
+}
+#SavePicture {
+	background: url('../image/save.png') no-repeat; background-position:center;
+	background-size: 22px 22px !important;
+}
+
+
+#ext-element-20 {font-size:20px;padding: 0 25px; color:#333;}
+
+/* Color */
+#ColorRed {
+	background: url('../image/red.png') no-repeat; background-position:center;
+	background-size: 20px 20px !important;	
+	margin-right:8px;	
+
+}
+#ColorBlue {
+	background: url('../image/blue.png') no-repeat; background-position:center;
+	background-size: 20px 20px !important;	
+	margin-right:10px;
+
+}
+#ColorYellow {
+	background: url('../image/yellow.png') no-repeat; background-position:center;
+	background-size: 20px 20px !important;
+	margin-right:10px;			
+
+}
+#ColorGreen {
+	background: url('../image/green.png') no-repeat; background-position:center;
+	background-size: 20px 20px !important;
+	margin-right:10px;		
+
+}
+#ColorBlack {
+	background: url('../image/black.png') no-repeat; background-position:center;
+	background-size: 20px 20px !important;	
+	margin-right:10px;	
+
+}
+#ColorGray {
+	background: url('../image/gray.png') no-repeat; background-position:center;
+	background-size: 20px 20px !important;	
+ 		
+
+}

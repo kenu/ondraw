@@ -1,0 +1,137 @@
+{
+    "type": "controller",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userClassName": "Main"
+    },
+    "id": "ExtBox1-ext-gen13453",
+    "designerId": "cf470f1f-a704-4e12-b246-09a3ca90dbd9",
+    "cn": [
+        {
+            "type": "controllerref",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "mainView",
+                "ref": "mainView",
+                "selector": "#MainView"
+            },
+            "designerId": "439bd4ad-a281-44f5-845e-fb8e953971e2"
+        },
+        {
+            "type": "controllerref",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "makeRoom",
+                "ref": "makeRoom",
+                "selector": "#MakeRoom"
+            },
+            "designerId": "e0be1634-d829-4c8c-9c2f-7505f327f59d"
+        },
+        {
+            "type": "controllerref",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "connect",
+                "ref": "connect",
+                "selector": "#Connect"
+            },
+            "designerId": "8a52ccb3-0ac5-4be8-86b3-83b52a04ced3"
+        },
+        {
+            "type": "controlleraction",
+            "reference": {
+                "name": "listeners",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "onButtonTapMakeRoom",
+                "fn": "onButtonTapMakeRoom",
+                "implHandler": [
+                    "console.log('button makeroom tap');",
+                    "",
+                    "this.getMain().animateActiveItem(1, {type: 'reveal', direction: 'up'});"
+                ],
+                "name": "tap",
+                "designer|targetType": "Ext.Button",
+                "designer|controlQuery": "[action=Room]"
+            },
+            "designerId": "ed2a4c0e-4060-4059-8b3b-19a7e6a02993"
+        },
+        {
+            "type": "controlleraction",
+            "reference": {
+                "name": "listeners",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "onButtonTapConnect",
+                "fn": "onButtonTapConnect",
+                "implHandler": [
+                    "console.log('button connect tap');",
+                    "",
+                    "Ext.Msg.show({",
+                    "  title   : '방번호를 입력하세요',",
+                    "  msg     : null,",
+                    "  buttons : [{",
+                    "    itemId : 'ok',",
+                    "    text   : '참여하기',",
+                    "    ui     : 'action'",
+                    "  },{",
+                    "    itemId : 'cancle',",
+                    "    text   : '취소'",
+                    "  }],",
+                    "  prompt  : { maxlength : 6, autocapitalize : false },",
+                    "  fn      : function(text,val) {",
+                    "    // do some stuff",
+                    "      console.log(text);",
+                    "      console.log(val);",
+                    "      ",
+                    "      if(text == 'ok') {",
+                    "          Ext.getCmp('RoomNum').setText(val);",
+                    "          Ext.getCmp('Main').animateActiveItem(1, {type: 'reveal', direction: 'down'});",
+                    "      } else {",
+                    "          ",
+                    "      }",
+                    "  }",
+                    "});"
+                ],
+                "name": "tap",
+                "designer|targetType": "Ext.Button",
+                "designer|controlQuery": "[action=connection]"
+            },
+            "designerId": "28001cdc-4e07-44ab-b9bd-210406d79bed"
+        },
+        {
+            "type": "controllerref",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "Reference7",
+                "ref": "main",
+                "selector": "#Main"
+            },
+            "designerId": "04e4f88b-21fe-4ddc-827b-d7500c8a7918"
+        }
+    ]
+}

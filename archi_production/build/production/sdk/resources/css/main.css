@@ -1,0 +1,44 @@
+
+#ToolPen {
+	background: url('../image/pen.png');
+	background-size: 40px 40px !important;		
+}
+#ToolEraser {
+	background: url('../image/eraser.png');
+	background-size: 40px 40px !important;	
+}
+#ToolNew {
+	background: url('../image/newpage.png');
+	background-size: 40px 40px !important;	
+}
+#ToolSetting {
+	background: url('../image/settings.png');
+	background-size: 40px 40px !important;	
+}
+
+
+/* Color */
+#ColorRed {
+	background: url('../image/red.png');
+	background-size: 40px 40px !important;
+}
+#ColorBlue {
+	background: url('../image/blue.png');
+	background-size: 40px 40px !important;
+}
+#ColorYellow {
+	background: url('../image/yellow.png');
+	background-size: 40px 40px !important;
+}
+#ColorGreen {
+	background: url('../image/green.png');
+	background-size: 40px 40px !important;
+}
+#ColorBlack {
+	background: url('../image/black.png');
+	background-size: 40px 40px !important;
+}
+#ColorGray {
+	background: url('../image/gray.png');
+	background-size: 40px 40px !important;
+}

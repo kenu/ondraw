@@ -1,0 +1,237 @@
+{
+    "type": "controller",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userClassName": "Canvas"
+    },
+    "id": "ExtBox1-ext-gen33279",
+    "designerId": "73cb768a-a17f-416f-af30-f7fab88c3f0b",
+    "cn": [
+        {
+            "type": "controllerref",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "toolPen",
+                "ref": "toolPen",
+                "selector": "#ToolPen"
+            },
+            "designerId": "112f4f49-cd1c-4e0d-ac4e-8930d5f201d2"
+        },
+        {
+            "type": "controllerref",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "toolEraser",
+                "ref": "toolEraser",
+                "selector": "#ToolEraser"
+            },
+            "designerId": "d6f04978-d8ec-4599-9bd0-035b6371fee1"
+        },
+        {
+            "type": "controllerref",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "roomNum",
+                "ref": "roomNum",
+                "selector": "#RoomNum"
+            },
+            "designerId": "1bba338a-fdc7-4819-9fe1-3d94d38fa0c8"
+        },
+        {
+            "type": "controllerref",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "toolNew",
+                "ref": "toolNew",
+                "selector": "#ToolNew"
+            },
+            "designerId": "d2af8ec5-da11-4ac3-9af5-8d00cd127321"
+        },
+        {
+            "type": "controllerref",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "toolSetting",
+                "ref": "toolSetting",
+                "selector": "#ToolSetting"
+            },
+            "designerId": "223c4546-4b7a-4003-a19c-614c84418776"
+        },
+        {
+            "type": "controllerref",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "colorRed",
+                "ref": "colorRed",
+                "selector": "#ColorRed"
+            },
+            "designerId": "809a4f84-b122-49c2-8a36-fe015d5375e0"
+        },
+        {
+            "type": "controllerref",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "colorBlue",
+                "ref": "colorBlue",
+                "selector": "#ColorBlue"
+            },
+            "designerId": "dafa4e72-db9c-4739-9984-8ee2a384c4ab"
+        },
+        {
+            "type": "controllerref",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "colorYellow",
+                "ref": "colorYellow",
+                "selector": "#ColorYellow"
+            },
+            "designerId": "77d96a0f-ce63-49ed-9af9-e82a2c8284ec"
+        },
+        {
+            "type": "controllerref",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "colorGreen",
+                "ref": "colorGreen",
+                "selector": "#ColorGreen"
+            },
+            "designerId": "4fe9f4e8-cf80-4797-8d34-217a2cd595c4"
+        },
+        {
+            "type": "controllerref",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "colorBlack",
+                "ref": "colorBlack",
+                "selector": "#ColorBlack"
+            },
+            "designerId": "e619370d-a6ef-40d3-8e13-40f6eb217081"
+        },
+        {
+            "type": "controllerref",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "colorGray",
+                "ref": "colorGray",
+                "selector": "#ColorGray"
+            },
+            "designerId": "63aa977e-e557-419a-ba45-6c456e0b8e7d"
+        },
+        {
+            "type": "controllerref",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "canvasView",
+                "ref": "canvasView",
+                "selector": "#CanvasView"
+            },
+            "designerId": "1a967203-dfd0-47e3-a982-017c7dc86748"
+        },
+        {
+            "type": "controllerref",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "topToolbar",
+                "ref": "topToolbar",
+                "selector": "#TopToolbar"
+            },
+            "designerId": "86b8b4ad-a0e3-4de6-bb84-bcb7fbc47269"
+        },
+        {
+            "type": "controllerref",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "bottomToolbar",
+                "ref": "bottomToolbar",
+                "selector": "#BottomToolbar"
+            },
+            "designerId": "ba4792fc-90dc-42ba-a525-170c3e77f4e3"
+        },
+        {
+            "type": "controlleraction",
+            "reference": {
+                "name": "listeners",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "onButtonTap",
+                "fn": "onButtonTap",
+                "implHandler": [
+                    "var canvas = document.getElementById('mycanvas');",
+                    "var context = canvas.getContext('2d');",
+                    "",
+                    "console.log(canvas);",
+                    "console.log(context);",
+                    "",
+                    "context.fillStyle = \"#232D38\";",
+                    "context.fillRect(0, 0, 640, 860);"
+                ],
+                "name": "tap",
+                "designer|targetType": "Ext.Button",
+                "designer|controlQuery": "toolPen"
+            },
+            "designerId": "842afe97-33da-4f4d-a98d-a93a833c9cf2"
+        }
+    ]
+}
