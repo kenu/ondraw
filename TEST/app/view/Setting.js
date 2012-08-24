@@ -36,6 +36,10 @@ Ext.define('TEST.view.Setting',{
              	            ]
 		         },
 		         {
+                 	xtype:"spacer",
+                 	height:'20px',
+                 },
+		         {
 					 xtype: 'SettingList',
 					 height: '200px',
 					 style: 'background-color:#eee',

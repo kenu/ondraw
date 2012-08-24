@@ -28,7 +28,15 @@ Ext.define("TEST.view.Main", {
 			{
 				xtype:'Setting',
 			},
-			
+			{
+				xtype:'Help',
+			},
+			{
+				xtype:'Info',
+			},
+			{
+				xtype:'Notice',
+			},
         ]
     }
 });

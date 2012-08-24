@@ -15,9 +15,10 @@ Ext.define('TEST.view.Conditions',{
                 	    items: [
                                 {
    		                     	xtype: 'button',
-   		                        text: '뒤로',
-   		                        ui: 'back', 
-   		                        align: 'left',
+   		                        text: '취소',
+   		                        ui: 'nomal', 
+   		                        align: 'right',
+   		                        id:'btnConditions_Cancel',
    		                       
    		                      } 
    		                     ]

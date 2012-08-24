@@ -15,10 +15,10 @@ Ext.define('TEST.view.Login',{
                 	    items: [
                                 {
    		                     	xtype: 'button',
-   		                        text: '취소',
-   		                        ui: 'nomal', 
-   		                        align: 'right',
-   		                       
+   		                        text: '뒤로',
+   		                        ui: 'back', 
+   		                        align: 'left',
+   		                        id: 'btn_LoginBack'
    		                      } 
    		                     ]
                 	    
@@ -49,6 +49,7 @@ Ext.define('TEST.view.Login',{
                         xtype: 'button',
                         text: '로그인',
                         ui: 'confirm',
+                        
                      },
                     
                     {
@@ -62,7 +63,7 @@ Ext.define('TEST.view.Login',{
 		                     	xtype: 'button',
 		                        text: '암호 재설정 >',
 		                        id: 'btnSettingPassword',
-		                        ui: 'plain', 
+		                        ui: 'plain',
 		                        style:'font-size:0.7em;color:#999;margin-top:20px;text-decoration:underline;',
 		                      } 
 		                     ]

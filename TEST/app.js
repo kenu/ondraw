@@ -5,7 +5,7 @@ Ext.application({
         'Ext.MessageBox'
     ],
 
-    views: ['Main', 'Login' ,'Register' ,'SettingPassword','Conditions','Tutorial','DecisionPoint','SettingList','Setting'],
+    views: ['Main', 'Login' ,'Register' ,'SettingPassword','Conditions','Tutorial','DecisionPoint','SettingList','Setting','Help','Info','Notice'],
     controllers: ['Main'],
     
     icon: {

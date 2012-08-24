@@ -4,7 +4,7 @@ Ext.define('TEST.view.Register',{
 	
 	 config:{
 		 
-             title: 'LogIn',
+             title: '계정만들기',
              iconCls: 'star',
             
             
@@ -15,12 +15,12 @@ Ext.define('TEST.view.Register',{
                 	    items: [
                                 {
    		                     	xtype: 'button',
-   		                        text: '취소',
-   		                        ui: 'nomal', 
-   		                        align: 'right',
-   		                       
-   		                      } 
-   		                     ]
+   		                        text: '뒤로',
+   		                        ui: 'back', 
+   		                        align: 'left',
+   		                        id: 'btn_RegisterBack'
+   		                        } 
+   		                       ]
                 	   
                 	},
                 	
@@ -30,13 +30,7 @@ Ext.define('TEST.view.Register',{
                     
                 		instructions: '',
                 		items: [
-					{
-					    xtype: 'textfield',
-					    name: 'ID',
-					    label: 'ID',
-					    
-					        
-					},
+					
                     {
                         xtype: 'emailfield',
                         name: 'Email',
@@ -50,6 +44,19 @@ Ext.define('TEST.view.Register',{
                         label: 'Password',
                         
                     },
+                    {
+                        xtype: 'passwordfield',
+                        name: 'PasswordConfirm',
+                        label: 'PasswordConfirm',
+                        
+                    },
+                    {
+					    xtype: 'textfield',
+					    name: 'NickName',
+					    label: 'NickName',
+					    
+					        
+					}
                     
                     ]},
                     
@@ -72,7 +79,8 @@ Ext.define('TEST.view.Register',{
                              {
 		                     	xtype: 'button',
 		                        text: '이용약관 >',
-		                        ui: 'plain', 
+		                        ui: 'plain',
+		                        id: 'btnConditions',
 		                        style:'font-size:0.7em;color:#999;margin-top:20px;text-decoration:underline;',
 		                      } 
 		                     ]

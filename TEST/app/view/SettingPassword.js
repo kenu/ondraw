@@ -16,9 +16,10 @@ Ext.define('TEST.view.SettingPassword',{
                 	    items: [
                                 {
    		                     	xtype: 'button',
-   		                        text: '뒤로',
-   		                        ui: 'back', 
-   		                        align: 'left',
+   		                        text: '취소',
+   		                        ui: 'nomal', 
+   		                        id: 'btnSettingPassword_Cancel',
+   		                        align: 'right',
    		                       
    		                      },
    		                      
@@ -59,8 +60,8 @@ Ext.define('TEST.view.SettingPassword',{
                     },
                     {
                         xtype: 'passwordfield',
-                        name: 'ConfirmPassword',
-                        label: 'ConfirmPassword',
+                        name: 'PasswordConfirm',
+                        label: 'PasswordConfirm',
                         
                     },
                     ]},
