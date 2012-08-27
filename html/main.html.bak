@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>on draw</title>
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<link type="text/css" rel="stylesheet" href="css/base.css" />
+<link type="text/css" rel="stylesheet" href="css/style.css" />
+
+</head>
+<body>
+<div id="wrap">
+	<div class="heder">
+	<header><h1><a href="#"><img src="img/logo01.jpg"></a></h1></header>
+	<nav><p><a href="">서비스  소개</a>  |  <a href="">정보</a> |  <a href="">공지사항</a></p></nav>
+	</div>
+	<div id="wrapCont">
+		<div class="left">
+			<section>
+			<div class="tutorialMakeRoom"></div>
+			<p><a href="#"><img src="img/btn_experience.gif"></a></p>
+			</section>
+		</div>
+		<div class="right">
+			<section>
+			<div class="tutorialTogether"></div>
+			<form name="form" method="post" action="">
+				<fieldset>
+				<legend>검색</legend>
+					
+					<label for="roomNum">방번호를 입력하세요</label>
+					<input type="text" id="roomNum" name="roomNum" value="" /> 
+					<a href="#"><img src="img/btnA_make.gif" alt="확인" /></a>
+					<p>예) 123456,34234</p>
+				</fieldset>
+				</form>
+			</section>
+		</div>
+	</div>
+	<div class="footer">
+	<footer></footer>
+	</div>
+ </div>
+ </body>
+ </html>

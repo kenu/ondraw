@@ -1,0 +1,22 @@
+@charset "utf-8";
+
+/************************************************************************
+ - file name : main.css
+ - summary   : main style,
+ - date      : 2012.08.25
+************************************************************************/
+
+/* main */
+#wrap {width:980px;margin:0 auto;}
+.heder {height:65px;}
+.heder h1 {float:left;padding:10px;}
+.heder p{float:right;padding:15px 10px;}
+#wrapCont {clear:both;height:460px;}
+.left {width:390px;height:400px;float:left;background:#f7f7f7;padding:30px 50px;}
+.left .tutorialMakeRoom {width:390px;height:200px;background:#fff;}
+.left p {margin-top:20px;}
+.right {width:390px;height:400px;float:right;background:#ccc;padding:30px 50px;}
+.right .tutorialTogether {width:390px;height:200px;background:#fff;}
+.right .roomNum {margin-top:20px;}
+.right #roomNum {height:21px;border:1px solid #e8e8e8;}
+#wrap .footer {height:50px;background:url(../img/img_copyright.jpg) no-repeat 50% bottom;}

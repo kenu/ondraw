@@ -1,0 +1,67 @@
+@charset "utf-8";
+
+/************************************************************************
+ - file name : base.css
+ - summary   : basic define, common style
+ - date      : 2012.08.25
+************************************************************************/
+
+/* basic */
+html {height:100%; }
+body {height:100%; margin:0px; padding:0px; font-size:12px; text-align:left;}
+table, th, td, div, p, strong, span, ol, ul, li, dl, dt, dd, h1, h2, h3, h4, h5, h6, a, textarea, input, select, form, fieldset, label, blockquote, pre {margin:0px; padding:0px; border:0px; font-family:dotum,"돋움",Gulim,"굴림",arial,verdana,sans-serif; font-size:12px; color:#888; line-height:18px;}
+table {border-collapse:collapse; empty-cells:show; border-spacing:0px;}
+table caption {display:none;}
+ul, ol {list-style:none;}
+img, button {border:0px;}
+hr {display:none; clear:both;}
+address, caption, cite, code, dfn, em, var {font-style:normal; font-weight:normal;}
+fieldset, abbr, acronym {border:0px;}
+legend {display:none;}
+img {vertical-align:top;}
+/* basic E */
+
+/* link */
+a:link {color:#888; text-decoration:none;}
+a:visited {color:#888; text-decoration:none;}
+a:hover {color:#888; text-decoration:underline;}
+a:active {color:#888; text-decoration:none;}
+/* link E */
+
+/* Form */
+input {height:auto; font-family:dotum,돋움,arial,verdana,sans-serif; border:0px; vertical-align:middle;}
+select {border:1px solid #d7d7d7; font-family:dotum,돋움,arial,verdana,sans-serif; vertical-align: middle;}
+textarea {border:solid 1px #ccc; font-family:dotum,돋움,arial,verdana,sans-serif;}
+/* Form E */
+
+/* h */
+h1, h2, h3, h4, h5, h6 {font-weight:normal;}
+/* h E */
+
+/* scroll */
+body, div, textarea {
+scrollbar-face-color:#fff;
+scrollbar-shadow-color:#fff;
+scrollbar-highlight-color:#fff;
+scrollbar-3dlight-color:#ccc;
+scrollbar-darkshadow-color:#ccc;
+scrollbar-track-color:#fff;
+scrollbar-arrow-color:#ccc;}
+/* scroll E */
+
+/* float hack */
+.clfix:after {content:"."; display:block; height:0; clear:both; visibility:hidden;} 
+.clfix {display:inline-block;}
+/* ie Holly Hack \*/ 
+* html .clfix {height:1%;} 
+.clfix {display:block;}
+/* //ie Holly Hack E */
+/* float hack E  */
+
+/* transparent png */
+.png24 {tmp:expression(setPng24(this));}
+/* transparent png E */
+
+/* ie 6.0 blink del */
+*html {filter:expression(document.execCommand('BackgroundImageCache', false, true));} 
+/* ie 6.0 blink del E */
