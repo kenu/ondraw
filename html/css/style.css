@@ -7,16 +7,58 @@
 ************************************************************************/
 
 /* main */
-#wrap {width:980px;margin:0 auto;}
+body {background:url(../img/bg_main01.jpg)repeat-x 50% 85px;;}
+#wrap {width:980px;margin:0 auto;position:relative;background:url(../img/bg_main.jpg) no-repeat 50% 85px;}
 .heder {height:65px;}
 .heder h1 {float:left;padding:10px;}
 .heder p{float:right;padding:15px 10px;}
-#wrapCont {clear:both;height:460px;}
-.left {width:390px;height:400px;float:left;background:#f7f7f7;padding:30px 50px;}
+#wrapCont {clear:both;height:656px;}
+.left {width:390px;height:656px;float:left;padding:30px 50px;position:relative;}
 .left .tutorialMakeRoom {width:390px;height:200px;background:#fff;}
-.left p {margin-top:20px;}
-.right {width:390px;height:400px;float:right;background:#ccc;padding:30px 50px;}
+.left p {position:absolute; bottom:120px; right:80px;}
+.right {width:390px;height:656px;float:right;padding:30px 50px;position:relative;}
 .right .tutorialTogether {width:390px;height:200px;background:#fff;}
-.right .roomNum {margin-top:20px;}
-.right #roomNum {height:21px;border:1px solid #e8e8e8;}
+.right .roomNum {position:absolute; bottom:120px; left:60px;}
+.right #roomNum {height:26px;border:1px solid #e8e8e8;padding:2px 0 0 5px;}
 #wrap .footer {height:50px;background:url(../img/img_copyright.jpg) no-repeat 50% bottom;}
+
+/* login-layout */
+.loginLayer {position:absolute; top:50px; left:100px;}
+.loginWrap {width:290px;border:1px solid #e8e8e8;padding:14px 30px 24px 30px;background:#fff url(../img/bg_layerLine.gif) repeat-x;box-shadow:#eee 2px 2px 2px;}
+.loginLayer h2 {float:left;margin-left:-15px}
+.loginLayer fieldset {clear:both;padding:27px 0 0 55px;background:url(../img/img_login.gif) no-repeat -2px 47px;}
+.lnk {text-align:right;display:block;color:#999; font-size:11px;}
+.loginLayer fieldset p, .registerLayer fieldset p, .changePwLayer p {margin-bottom:3px;}
+.loginLayer fieldset p img, .registerLayer fieldset p img {vertical-align:middle;}
+#E-mail, #passWord, #id, #ConfirmPW  {border:1px solid #e8e8e8;height:21px;width:155px;margin-left:-3px;padding:2px 0 0 5px;}
+.closeBtn {position:absolute; top:15px; right:15px;}
+.submitBtn img {margin:17px 0 0 45px;}
+
+/* register-layout */
+.registerLayer {position:absolute; top:50px; left:500px; }
+.registerWrap {width:290px;border:1px solid #e8e8e8;padding:14px 30px 24px 30px;background:#fff url(../img/bg_layerLine.gif) repeat-x;box-shadow:#eee 2px 2px 2px;}
+.registerLayer fieldset {clear:both;padding:27px 0 0 55px;background:url(../img/img_newaccount01.gif) no-repeat -2px 47px;}
+.registerLayer h2 {float:left; margin-left:-15px}
+
+/* changePw */
+.changePwLayer {position:absolute; top:300px; left:100px;}
+.changePwWrap {width:290px;border:1px solid #e8e8e8;padding:14px 30px 24px 30px;background:#fff url(../img/bg_layerLine.gif) repeat-x;box-shadow:#eee 2px 2px 2px;}
+.changePwLayer fieldset {clear:both;padding:27px 0 0 55px;background:url(../img/img_changePW.gif) no-repeat -2px 47px;}
+.changePwLayer h2 {float:left; margin-left:-15px}
+.changePwLayer .sbtn {text-align:right;display:block;margin:5px 0 8px 0;}
+
+/* Privacy Policy */
+.PrivacyLayer {position:absolute; top:300px; left:500px;}
+.PrivacyWrap {width:295px;border:1px solid #e8e8e8;padding:14px 25px 15px 30px;background:#fff url(../img/bg_layerLine.gif) repeat-x;box-shadow:#eee 2px 2px 2px;}
+.PrivacyLayer h2 {float:left; margin-left:-15px}
+.Privacy {clear:both;margin-top:47px; height:220px;overflow-y:auto;padding-right:5px;font-size:11px;}
+
+/* Privacy Policy */
+.chromeLayer {position:absolute; top:150px; left:200px;z-index:100;}
+.chromeWrap {width:440px;height:295px;border:1px solid #e8e8e8;background:url(../img/img_chrome01.gif) no-repeat;box-shadow:#eee 2px 2px 2px;}
+.chrome {clear:both;margin-top:47px; height:220px;overflow-y:auto;padding-right:5px;font-size:11px;}
+.chromeBtn {position:absolute; top:163px; right:60px;}
+
+/* padding-set */
+.pt20 {padding-top:20px;}
+.pl44 {padding-left:40px;}

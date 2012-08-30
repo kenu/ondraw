@@ -7,7 +7,7 @@
 ************************************************************************/
 
 /* basic */
-html {height:100%; overflow-y:scroll;}
+html {height:100%; }
 body {height:100%; margin:0px; padding:0px; font-size:12px; text-align:left;}
 table, th, td, div, p, strong, span, ol, ul, li, dl, dt, dd, h1, h2, h3, h4, h5, h6, a, textarea, input, select, form, fieldset, label, blockquote, pre {margin:0px; padding:0px; border:0px; font-family:dotum,"돋움",Gulim,"굴림",arial,verdana,sans-serif; font-size:12px; color:#888; line-height:18px;}
 table {border-collapse:collapse; empty-cells:show; border-spacing:0px;}
@@ -24,7 +24,7 @@ img {vertical-align:top;}
 /* link */
 a:link {color:#888; text-decoration:none;}
 a:visited {color:#888; text-decoration:none;}
-a:hover {color:#888; text-decoration:underline;}
+a:hover {color:#666; text-decoration:none;}
 a:active {color:#888; text-decoration:none;}
 /* link E */
 
@@ -42,11 +42,11 @@ h1, h2, h3, h4, h5, h6 {font-weight:normal;}
 body, div, textarea {
 scrollbar-face-color:#fff;
 scrollbar-shadow-color:#fff;
-scrollbar-highlight-color:#fff;
-scrollbar-3dlight-color:#ccc;
-scrollbar-darkshadow-color:#ccc;
+scrollbar-highlight-color:#e8e8e8;
+scrollbar-3dlight-color:#e8e8e8;
+scrollbar-darkshadow-color:#e8e8e8;
 scrollbar-track-color:#fff;
-scrollbar-arrow-color:#ccc;}
+scrollbar-arrow-color:#e8e8e8;}
 /* scroll E */
 
 /* float hack */

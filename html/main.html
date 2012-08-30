@@ -11,26 +11,24 @@
 <div id="wrap">
 	<div class="heder">
 	<header><h1><a href="#"><img src="img/logo01.jpg"></a></h1></header>
-	<nav><p><a href="">서비스  소개</a>  |  <a href="">정보</a> |  <a href="">공지사항</a></p></nav>
+	<nav><p><a href="#">로그인</a>  |  <a href="#">회원가입</a> |  <a href="#">공지사항</a> |  <a href="#">크롬 브라우저 다운로드</a></p></nav>
 	</div>
 	<div id="wrapCont">
 		<div class="left">
 			<section>
-			<div class="tutorialMakeRoom"></div>
-			<p><a href="#"><img src="img/btn_experience.gif"></a></p>
+			<!-- <div class="tutorialMakeRoom"></div> -->
+			<p class="make"><a href="#"><img src="img/btn_make.gif"></a></p>
 			</section>
 		</div>
 		<div class="right">
 			<section>
-			<div class="tutorialTogether"></div>
+			<!-- <div class="tutorialTogether"></div> -->
 			<div class="roomNum">
 			<form name="form" method="post" action="">
 				<fieldset>
 				<legend>검색</legend>
-					<label for="roomNum">방번호를 입력하세요</label>
-					<input type="text" id="roomNum" name="roomNum" value="" /> 
-					<a href="#"><img src="img/btnA_make.gif" alt="확인" /></a>
-					<p>예) 123456,34234</p>
+					<input type="text" id="roomNum" name="roomNum" value="방번호를 입력하세요" /> 
+					<a href="#"><img src="img/btn_join.gif" alt="취소" /></a>
 				</fieldset>
 			</form>
 			</div>
@@ -40,6 +38,86 @@
 	<div class="footer">
 	<footer></footer>
 	</div>
+	
+	<!-- S: loginLayer -->
+	<div class="loginLayer">
+		<div class="loginWrap">
+		<h2><img src="img/tit_login.gif" alt="로그인"/></h2>
+		<p class="closeBtn"><a href="#"><img src="img/btn_close.gif" alt="close"/></a></p>
+			<form name="formLogin" method="post" action="">
+				<fieldset>
+				<legend>로그인</legend>
+					<span class="lnk"><a href="#">비밀번호 확인</a> | <a href="#">회원가입</a></span>
+					<p><label for="id"><img src="img/tit_id.gif" alt=" 아이디"/></label>
+					<input type="text" id="id" name="id" value="" /> </p>
+					<p><label for="passWord"><img src="img/tit_PW.gif" alt="비밀번호"/></label>
+					<input type="text" id="passWord" name="passWord" value="" /> </p>
+					<a href="#" class="submitBtn"><img src="img/btn_login01.gif" alt="로그인" /></a>
+				</fieldset>
+			</form>
+		</div>
+	</div>
+	<!-- S: registerLayer -->
+	<div class="registerLayer">
+		<div class="registerWrap">
+		<h2><img src="img/tit_newaccount.gif" alt=" 회원가입"/></h2>
+		<p class="closeBtn"><a href="#"><img src="img/btn_close.gif" alt="close"/></a></p>
+			<form name="formRegister" method="post" action="">
+				<fieldset>
+				<legend>회원가입</legend>
+					<span class="lnk"><a href="#">이용약관 ></a></span>
+					<p><label for="E-mail"><img src="img/tit_email.gif" alt="이메일"/></label>
+					<input type="text" id="E-mail" name="E-mail" value="" /> </p>
+					<p><label for="passWord"><img src="img/tit_PW.gif" alt="비밀번호"/></label>
+					<input type="text" id="passWord" name="passWord" value="" /> </p>
+					<p><label for="ConfirmPW"><img src="img/tit_ConfirmPW.gif" alt="비밀번호확인"/></label>
+					<input type="text" id="ConfirmPW" name="ConfirmPW" value="" /> </p>
+					<p><label for="id"><img src="img/tit_id.gif" alt=" 아이디"/></label>
+					<input type="text" id="id" name="id" value="" /> </p>
+					<a href="#" class="submitBtn"><img src="img/btn_submit01.gif" alt=" 가입하기" /></a>
+				</fieldset>
+			</form>
+		</div>
+	</div>
+	<!-- S: settingPasswordLayer -->
+	<div class="changePwLayer">
+		<div class="changePwWrap">
+		<h2><img src="img/tit_changePW.gif" alt="비밀번호재설정"/></h2>
+		<p class="closeBtn"><a href="#"><img src="img/btn_close.gif" alt="close"/></a></p>
+			<form name="formRegister" method="post" action="">
+				<fieldset>
+				<legend>비밀번호재설정</legend>
+					<span class="lnk">이계정에 등록한 이메일을 입력해 주세요</span>
+					<p><label for="E-mail"><img src="img/tit_email.gif" alt="이메일"/></label>
+					<input type="text" id="E-mail" name="E-mail" value="" /> </p>
+					<p><label for="id"><img src="img/tit_id.gif" alt=" 아이디"/></label>
+					<input type="text" id="id" name="id" value="" /> </p>
+					<a href="#" class="sbtn"><img src="img/btn_s_ok.gif" alt="확인" /></a>
+					<p><label for="passWord"><img src="img/tit_PW.gif" alt="비밀번호"/></label>
+					<input type="text" id="passWord" name="passWord" value="" /> </p>
+					<p><label for="ConfirmPW"><img src="img/tit_ConfirmPW.gif" alt="비밀번호확인"/></label>
+					<input type="text" id="ConfirmPW" name="ConfirmPW" value="" /> </p>
+					<a href="#" class="submitBtn"><img src="img/btn_changePW.gif" alt="비밀번호재설정" /></a>
+				</fieldset>
+			</form>
+		</div>
+	</div>
+	<!-- S: Privacy PolicyLayer -->
+	<div class="PrivacyLayer">
+		<div class="PrivacyWrap">
+		<h2><img src="img/tit_Privacy.gif" alt="이용약관"/></h2>
+		<p class="closeBtn"><a href="#"><img src="img/btn_close.gif" alt="close"/></a></p>
+			<div class="Privacy">이용약관드러갑니다.이용약관드러갑니다.이용약관드러갑니다.이용약관드러갑니다.이용약관드러갑니다.이용약관드러갑니다.이용약관드러갑니다.이용약관드러갑니다.이용약관드러갑니다.이용약관드러갑니다.이용약관드러갑니다.이용약관드러갑니다.이용약관드러갑니다.이용약관드러갑니다.이용약관드러갑니다.이용약관드러갑니다.이용약관드러갑니다.이용약관드러갑니다.이용약관드러갑니다.이용약관드러갑니다.이용약관드러갑니다.이용약관드러갑니다.이용약관드러갑니다.이용약관드러갑니다.이용약관드러갑니다.이용약관드러갑니다.이용약관드러갑니다.이용약관드러갑니다.이용약관드러갑니다.이용약관드러갑니다.이용약관드러갑니다.이용약관드러갑니다.이용약관드러갑니다.이용약관드러갑니다.이용약관드러갑니다.이용약관드러갑니다.이용약관드러갑니다.이용약관드러갑니다.이용약관드러갑니다.이용약관드러갑니다.이용약관드러갑니다.이용약관드러갑니다.이용약관드러갑니다.이용약관드러갑니다.이용약관드러갑니다.이용약관드러갑니다.이용약관드러갑니다.이용약관드러갑니다.이용약관드러갑니다.이용약관드러갑니다.이용약관드러갑니다.이용약관드러갑니다.이용약관드러갑니다.이용약관드러갑니다. </div>
+		</div>
+	</div>
+	<!-- S: chrome -->
+	<div class="chromeLayer">
+		<div class="chromeWrap">
+		<p class="closeBtn"><a href="#"><img src="img/btn_close.gif" alt="close"/></a></p>
+		<p class="chromeBtn"><a href="#"><img src="img/btn_chrome01.gif" alt="close"/></a></p>
+		</div>
+	</div>
+
  </div>
  </body>
  </html>
