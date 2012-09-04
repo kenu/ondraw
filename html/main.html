@@ -11,7 +11,7 @@
 <div id="wrap">
 	<div class="heder">
 	<header><h1><a href="#"><img src="img/logo01.jpg"></a></h1></header>
-	<nav><p><a href="#">로그인</a>  |  <a href="#">회원가입</a> |  <a href="#">공지사항</a> |  <a href="#">크롬 브라우저 다운로드</a></p></nav>
+	<nav><p><a href="javascript:openLoginWindow()">로그인</a>  |  <a href="javascript:openRegisterWindow()">회원가입</a> |  <a href="#">공지사항</a> |  <a href="https://www.google.com/intl/ko/chrome/browser/" target="_blank">크롬 브라우저 다운로드</a></p></nav>
 	</div>
 	<div id="wrapCont">
 		<div class="left">
@@ -40,14 +40,14 @@
 	</div>
 	
 	<!-- S: loginLayer -->
-	<div class="loginLayer">
+	<div class="loginLayer" id="loginLayerDiv">
 		<div class="loginWrap">
 		<h2><img src="img/tit_login.gif" alt="로그인"/></h2>
-		<p class="closeBtn"><a href="#"><img src="img/btn_close.gif" alt="close"/></a></p>
+		<p class="closeBtn"><a href="javascript:onClose('loginLayerDiv')"><img src="img/btn_close.gif" alt="close"/></a></p>
 			<form name="formLogin" method="post" action="">
 				<fieldset>
 				<legend>로그인</legend>
-					<span class="lnk"><a href="#">비밀번호 확인</a> | <a href="#">회원가입</a></span>
+					<span class="lnk"><a href="javascript:openchangePwWindow()">비밀번호 확인</a> | <a href="javascript:openRegisterWindow()">회원가입</a></span>
 					<p><label for="id"><img src="img/tit_id.gif" alt=" 아이디"/></label>
 					<input type="text" id="id" name="id" value="" /> </p>
 					<p><label for="passWord"><img src="img/tit_PW.gif" alt="비밀번호"/></label>
@@ -58,14 +58,14 @@
 		</div>
 	</div>
 	<!-- S: registerLayer -->
-	<div class="registerLayer">
+	<div class="registerLayer" id="registerLayerDiv">
 		<div class="registerWrap">
 		<h2><img src="img/tit_newaccount.gif" alt=" 회원가입"/></h2>
-		<p class="closeBtn"><a href="#"><img src="img/btn_close.gif" alt="close"/></a></p>
+		<p class="closeBtn"><a href="javascript:onClose('registerLayerDiv')"><img src="img/btn_close.gif" alt="close"/></a></p>
 			<form name="formRegister" method="post" action="">
 				<fieldset>
 				<legend>회원가입</legend>
-					<span class="lnk"><a href="#">이용약관 ></a></span>
+					<span class="lnk"><a href="javascript:openPrivacyWindow()">이용약관</a></span>
 					<p><label for="E-mail"><img src="img/tit_email.gif" alt="이메일"/></label>
 					<input type="text" id="E-mail" name="E-mail" value="" /> </p>
 					<p><label for="passWord"><img src="img/tit_PW.gif" alt="비밀번호"/></label>
@@ -80,10 +80,10 @@
 		</div>
 	</div>
 	<!-- S: settingPasswordLayer -->
-	<div class="changePwLayer">
+	<div class="changePwLayer" id="changePwLayerDiv">
 		<div class="changePwWrap">
 		<h2><img src="img/tit_changePW.gif" alt="비밀번호재설정"/></h2>
-		<p class="closeBtn"><a href="#"><img src="img/btn_close.gif" alt="close"/></a></p>
+		<p class="closeBtn"><a href="javascript:onClose('changePwLayerDiv')"><img src="img/btn_close.gif" alt="close"/></a></p>
 			<form name="formRegister" method="post" action="">
 				<fieldset>
 				<legend>비밀번호재설정</legend>
@@ -103,21 +103,49 @@
 		</div>
 	</div>
 	<!-- S: Privacy PolicyLayer -->
-	<div class="PrivacyLayer">
+	<div class="PrivacyLayer" id="PrivacyLayerDiv">
 		<div class="PrivacyWrap">
-		<h2><img src="img/tit_Privacy.gif" alt="이용약관"/></h2>
-		<p class="closeBtn"><a href="#"><img src="img/btn_close.gif" alt="close"/></a></p>
+		<h2><img src="img/tit_privacy.gif" alt="이용약관"/></h2>
+		<p class="closeBtn"><a href="javascript:onClose('PrivacyLayerDiv')"><img src="img/btn_close.gif" alt="close"/></a></p>
 			<div class="Privacy">이용약관드러갑니다.이용약관드러갑니다.이용약관드러갑니다.이용약관드러갑니다.이용약관드러갑니다.이용약관드러갑니다.이용약관드러갑니다.이용약관드러갑니다.이용약관드러갑니다.이용약관드러갑니다.이용약관드러갑니다.이용약관드러갑니다.이용약관드러갑니다.이용약관드러갑니다.이용약관드러갑니다.이용약관드러갑니다.이용약관드러갑니다.이용약관드러갑니다.이용약관드러갑니다.이용약관드러갑니다.이용약관드러갑니다.이용약관드러갑니다.이용약관드러갑니다.이용약관드러갑니다.이용약관드러갑니다.이용약관드러갑니다.이용약관드러갑니다.이용약관드러갑니다.이용약관드러갑니다.이용약관드러갑니다.이용약관드러갑니다.이용약관드러갑니다.이용약관드러갑니다.이용약관드러갑니다.이용약관드러갑니다.이용약관드러갑니다.이용약관드러갑니다.이용약관드러갑니다.이용약관드러갑니다.이용약관드러갑니다.이용약관드러갑니다.이용약관드러갑니다.이용약관드러갑니다.이용약관드러갑니다.이용약관드러갑니다.이용약관드러갑니다.이용약관드러갑니다.이용약관드러갑니다.이용약관드러갑니다.이용약관드러갑니다.이용약관드러갑니다.이용약관드러갑니다.이용약관드러갑니다.이용약관드러갑니다. </div>
 		</div>
 	</div>
 	<!-- S: chrome -->
-	<div class="chromeLayer">
+	<div class="chromeLayer" id="chromeLayerDiv">
 		<div class="chromeWrap">
-		<p class="closeBtn"><a href="#"><img src="img/btn_close.gif" alt="close"/></a></p>
+		<p class="closeBtn"><a href="javascript:onClose('chromeLayerDiv')"><img src="img/btn_close.gif" alt="close"/></a></p>
 		<p class="chromeBtn"><a href="#"><img src="img/btn_chrome01.gif" alt="close"/></a></p>
 		</div>
 	</div>
 
  </div>
  </body>
+ <script type="text/javascript">
+ 	
+ 	if(navigator.userAgent.indexOf('Chrome')<0){
+ 		document.getElementById('chromeLayerDiv').style.visibility='visible';
+ 	}
+ 	
+ 	function onClose(idName){
+ 		document.getElementById(idName).style.visibility='hidden';
+ 	}
+ 	
+ 	function openLoginWindow(){
+ 		document.getElementById('loginLayerDiv').style.visibility='visible';
+ 		
+ 	}
+ 	function openRegisterWindow(){
+ 		document.getElementById('registerLayerDiv').style.visibility='visible';
+ 		
+ 	}
+ 	function openchangePwWindow(){
+ 		document.getElementById('changePwLayerDiv').style.visibility='visible';
+ 		
+ 	}
+ 	function openPrivacyWindow(){
+ 		document.getElementById('PrivacyLayerDiv').style.visibility='visible';
+ 		
+ 	}
+ </script>
+ 
  </html>

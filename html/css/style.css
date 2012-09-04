@@ -7,7 +7,7 @@
 ************************************************************************/
 
 /* main */
-body {background:url(../img/bg_main01.jpg)repeat-x 50% 85px;;}
+body {background:url(../img/bg_main01.jpg)repeat-x 50% 85px;}
 #wrap {width:980px;margin:0 auto;position:relative;background:url(../img/bg_main.jpg) no-repeat 50% 85px;}
 .heder {height:65px;}
 .heder h1 {float:left;padding:10px;}
@@ -23,8 +23,8 @@ body {background:url(../img/bg_main01.jpg)repeat-x 50% 85px;;}
 #wrap .footer {height:50px;background:url(../img/img_copyright.jpg) no-repeat 50% bottom;}
 
 /* login-layout */
-.loginLayer {position:absolute; top:50px; left:100px;}
-.loginWrap {width:290px;border:1px solid #e8e8e8;padding:14px 30px 24px 30px;background:#fff url(../img/bg_layerLine.gif) repeat-x;box-shadow:#eee 2px 2px 2px;}
+.loginLayer {position:absolute; top:30%; left:33%;visibility: visible;}
+.loginWrap {width:290px;border:1px solid #e8e8e8;padding:14px 30px 24px 30px;background:#fff url(../img/bg_layerLine.gif) repeat-x;}
 .loginLayer h2 {float:left;margin-left:-15px}
 .loginLayer fieldset {clear:both;padding:27px 0 0 55px;background:url(../img/img_login.gif) no-repeat -2px 47px;}
 .lnk {text-align:right;display:block;color:#999; font-size:11px;}
@@ -35,27 +35,27 @@ body {background:url(../img/bg_main01.jpg)repeat-x 50% 85px;;}
 .submitBtn img {margin:17px 0 0 45px;}
 
 /* register-layout */
-.registerLayer {position:absolute; top:50px; left:500px; }
-.registerWrap {width:290px;border:1px solid #e8e8e8;padding:14px 30px 24px 30px;background:#fff url(../img/bg_layerLine.gif) repeat-x;box-shadow:#eee 2px 2px 2px;}
+.registerLayer {position:absolute; top:30%; left:33%; visibility: hidden;}
+.registerWrap {width:290px;border:1px solid #e8e8e8;padding:14px 30px 24px 30px;background:#fff url(../img/bg_layerLine.gif) repeat-x;}
 .registerLayer fieldset {clear:both;padding:27px 0 0 55px;background:url(../img/img_newaccount01.gif) no-repeat -2px 47px;}
 .registerLayer h2 {float:left; margin-left:-15px}
 
 /* changePw */
-.changePwLayer {position:absolute; top:300px; left:100px;}
-.changePwWrap {width:290px;border:1px solid #e8e8e8;padding:14px 30px 24px 30px;background:#fff url(../img/bg_layerLine.gif) repeat-x;box-shadow:#eee 2px 2px 2px;}
+.changePwLayer {position:absolute; top:30%; left:33%; visibility: hidden;}
+.changePwWrap {width:290px;border:1px solid #e8e8e8;padding:14px 30px 24px 30px;background:#fff url(../img/bg_layerLine.gif) repeat-x;}
 .changePwLayer fieldset {clear:both;padding:27px 0 0 55px;background:url(../img/img_changePW.gif) no-repeat -2px 47px;}
 .changePwLayer h2 {float:left; margin-left:-15px}
 .changePwLayer .sbtn {text-align:right;display:block;margin:5px 0 8px 0;}
 
 /* Privacy Policy */
-.PrivacyLayer {position:absolute; top:300px; left:500px;}
-.PrivacyWrap {width:295px;border:1px solid #e8e8e8;padding:14px 25px 15px 30px;background:#fff url(../img/bg_layerLine.gif) repeat-x;box-shadow:#eee 2px 2px 2px;}
+.PrivacyLayer {position:absolute; top:300px; left:500px;visibility: hidden;}
+.PrivacyWrap {width:295px;border:1px solid #e8e8e8;padding:14px 25px 15px 30px;background:#fff url(../img/bg_layerLine.gif) repeat-x;}
 .PrivacyLayer h2 {float:left; margin-left:-15px}
 .Privacy {clear:both;margin-top:47px; height:220px;overflow-y:auto;padding-right:5px;font-size:11px;}
 
-/* Privacy Policy */
-.chromeLayer {position:absolute; top:150px; left:200px;z-index:100;}
-.chromeWrap {width:440px;height:295px;border:1px solid #e8e8e8;background:url(../img/img_chrome01.gif) no-repeat;box-shadow:#eee 2px 2px 2px;}
+/* chrome */
+.chromeLayer {position:absolute; top:28%; left:28%;z-index:100;visibility: hidden;}
+.chromeWrap {width:440px;height:295px;border:1px solid #e8e8e8;background:url(../img/img_chrome01.gif) no-repeat;}
 .chrome {clear:both;margin-top:47px; height:220px;overflow-y:auto;padding-right:5px;font-size:11px;}
 .chromeBtn {position:absolute; top:163px; right:60px;}
 
